@@ -99,9 +99,9 @@ h1, h2, h3{
 
 h1 {
     font-size: 36px;
-    font-weight: normal;
     line-height: 40px;
     margin: 0 0 24px;
+    font-family: "Playfair", Serif;
 }
 
 h2 {
