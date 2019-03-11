@@ -7,15 +7,15 @@
 @font-face {
     font-family:"Inter UI Web";
     font-weight: 400;
-    src:url("../fonts/Inter-UI-Regular.woff2") format("woff2;"),
-        url("../fonts/Inter-UI-Regular.woff") format("woff;");
+    src:url("../fonts/Inter-UI/Inter-UI-Regular.woff2") format("woff2;"),
+        url("../fonts/Inter-UI/Inter-UI-Regular.woff") format("woff;");
 }
 
 @font-face {
     font-family:"Inter UI Web";
     font-weight: 700;
-    src:url("../fonts/Inter-UI-Bold.woff2") format("woff2;"),
-        url("../fonts/Inter-UI-Bold.woff") format("woff;");
+    src:url("../fonts/Inter-UI/Inter-UI-Bold.woff2") format("woff2;"),
+        url("../fonts/Inter-UI/Inter-UI-Bold.woff") format("woff;");
 }
 
 
@@ -55,6 +55,8 @@ html {
     font-family:  "Droid Serif",Georgia, Serif;
     color: #5C6366;
     padding: 48px 24px 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -108,6 +110,10 @@ h2 {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
+}
+
+*+h2{
+    margin-top: 48px;
 }
 
 h3 {
@@ -186,6 +192,39 @@ a:focus {
     color: #00E6A1;
 }
 
+/*
+    Components: author
+*/
+
+.c-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.c-author__image{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    margin-right: 16px;
+}
+
+.c-author__name,
+.c-author__meta{
+    margin-bottom: 0;
+}
+
+.c-author__meta{
+    font-size: 14px;
+    font-family: "Inter UI" , "Helvetica Neue", Helvetica, arial, sans-serif;
+    line-height: 16px;
+    margin-top: 4px;
+}
+
+.c-author__name {
+    font-size: 16px;
+    line-height: 16px;
+}
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {}
